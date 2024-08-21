@@ -4,7 +4,8 @@
       return {
         name: 'John Doe',
         status: 'pending', 
-        tasks: ['Task One', 'Task Two', 'Task Three']
+        tasks: ['Task One', 'Task Two', 'Task Three'],
+        link: 'https://google.com'
       }
     }
   }
@@ -20,4 +21,6 @@
   <ul>
     <li v-for="task in tasks" :key="task">{{ task }}</li>
   </ul>
+  <!-- <a v-bind:href="link">Click for Google</a> -->
+  <a :href="link">Click for Google</a> <!-- When you use a colon (:) you are indicating that the value is dynamic, it is not a text but a variable-->
 </template>
