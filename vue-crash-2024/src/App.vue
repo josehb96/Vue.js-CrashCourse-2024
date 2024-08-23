@@ -1,29 +1,35 @@
 <script>
-  export default {
-    data() {
-      return {
-        name: 'John Doe',
-        status: 'pending', 
-        tasks: ['Task One', 'Task Two', 'Task Three'],
-        link: 'https://google.com'
+export default {
+  setup(){
+  
+    const name = 'John Doe';
+    const status = 'active';
+    const tasks = ['Task One', 'Task Two', 'Task Three'];
+  
+    const toggleStatus = () => {
+      if (this.status === 'active') {
+        this.status = 'pending';
+      } else if (this.status === 'pending') {
+        this.status = 'inactive';
+      } else {
+        this.status = 'active';
       }
-    },
-    methods: {
-      toggleStatus() {
-        if (this.status === 'active') {
-          this.status = 'pending'
-        } else if (this.status === 'pending') {
-          this.status = 'inactive'
-        } else {
-          this.status = 'active'
-        }
-      }
-    }
-  }
+    };
+  
+    return {
+      name,
+      status,
+      tasks,
+      toggleStatus,
+    };
+
+  },
+
+};
 </script>
 
 <template>
-  <h1>Vue Jobs</h1>
+  <h1>{{ name }}</h1>
   <p v-if="status === 'active'">User is active</p>
   <p v-else-if="status === 'pending'">User is pending</p>
   <p v-else>User is inactive</p>
@@ -32,8 +38,6 @@
   <ul>
     <li v-for="task in tasks" :key="task">{{ task }}</li>
   </ul>
-  <!-- <a v-bind:href="link">Click for Google</a> -->
-  <a :href="link">Click for Google</a> <!-- When you use a colon (:) you are indicating that the value is dynamic, it is not a text but a variable-->
   <br />
   <!-- <button v-on:click="toggleStatus">Change Status</button> -->
   <button @click="toggleStatus">Change Status</button>
