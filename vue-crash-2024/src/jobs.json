@@ -83,34 +83,6 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
-    },
-    {
-      "id": "1bff",
-      "title": "Kelsey Montgomery",
-      "type": "Full-Time",
-      "location": "In dicta laborum Do",
-      "description": "Ullamco vitae laboru",
-      "salary": "$100K - $125K",
-      "company": {
-        "name": "Rosales Rodgers Associates",
-        "description": "Est minim vitae exp",
-        "contactEmail": "cyfitova@mailinator.com",
-        "contactPhone": "+1 (909) 654-2306"
-      }
-    },
-    {
-      "id": "020f",
-      "title": "Vue Dev",
-      "type": "Full-Time",
-      "location": "Autem saepe iste ex ",
-      "description": "Consectetur atque qu",
-      "salary": "$70K - $80K",
-      "company": {
-        "name": "Vang and Kerr Plc",
-        "description": "Tempor ea aperiam ob",
-        "contactEmail": "pixijicuv@mailinator.com",
-        "contactPhone": "+1 (801) 714-8476"
-      }
     }
   ]
 }
