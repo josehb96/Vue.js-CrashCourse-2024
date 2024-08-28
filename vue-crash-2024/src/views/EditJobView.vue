@@ -1,12 +1,11 @@
 <script setup>
 import router from '@/router';
-import { isShallow, reactive } from 'vue';
-import { useRoute, useRouter } from 'vue-router';
+import { isShallow, onMounted, reactive } from 'vue';
+import { useRoute } from 'vue-router';
 import { useToast } from 'vue-toastification';
 import axios from 'axios';
 
 const route = useRoute();
-const router = useRouter();
 
 const jobId = route.params.id;
 
@@ -21,7 +20,7 @@ const form = reactive({
         description: '',
         contactEmail: '',
         contactPhone: ''
-    } 
+    }, 
 });
 
 const state = reactive({
@@ -55,6 +54,27 @@ const handleSubmit = async () => {
         toast.error('Job Was Not Added');
     }
 };
+
+onMounted(async () => {
+    try {
+        const response = await axios.get(`/api/jobs/${jobId}`);
+        state.job = response.data;
+        // Populate inputs
+        form.type = state.job.type;
+        form.title = state.job.title;
+        form.description = state.job.description;
+        form.salary = state.job.salary;
+        form.location = state.job.location;
+        form.company.name = state.job.company.name;
+        form.company.description = state.job.company.description;
+        form.company.contactEmail = state.job.company.contactEmail;
+        form.company.contactPhone = state.job.company.contactPhone;
+    } catch (error) {
+       console.error('Error fetching job', error); 
+    } finally {
+        state.isLoading = false;
+    }
+})
 
 </script>
 
