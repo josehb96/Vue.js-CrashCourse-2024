@@ -97,6 +97,20 @@
         "contactEmail": "cyfitova@mailinator.com",
         "contactPhone": "+1 (909) 654-2306"
       }
+    },
+    {
+      "id": "020f",
+      "title": "Vue Dev",
+      "type": "Full-Time",
+      "location": "Autem saepe iste ex ",
+      "description": "Consectetur atque qu",
+      "salary": "$70K - $80K",
+      "company": {
+        "name": "Vang and Kerr Plc",
+        "description": "Tempor ea aperiam ob",
+        "contactEmail": "pixijicuv@mailinator.com",
+        "contactPhone": "+1 (801) 714-8476"
+      }
     }
   ]
 }
