@@ -61,18 +61,6 @@ Before getting started, ensure you have a basic understanding of the following:
 - Navigate through different views using the navigation bar.
 - Modify components in the `src/components/` directory to see real-time updates.
 
-## Contributing
-
-Contributions are welcome! If you have suggestions for improvements or new features, please fork the repository and submit a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
 ## Acknowledgments
 
 Special thanks to Traversy Media for providing the course material and resources used in this project. For more information, visit [Traversy Media](https://www.traversymedia.com). 
-
----
-
-This README serves as a guide to get started with the Vue.js Crash Course 2024 project, providing a structured approach to learning and building with Vue.js.
