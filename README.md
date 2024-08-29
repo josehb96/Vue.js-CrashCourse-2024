@@ -1,4 +1,4 @@
-# Vue.js Crash Course 2024
+# VueJobs
 
 ## Overview
 
