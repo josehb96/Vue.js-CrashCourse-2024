@@ -1,75 +1,81 @@
-# VueJobs - Job Listing Platform with Vue.js
+# Vue.js Crash Course 2024
 
-This project is a job listing web application built with Vue.js 3 and Vite. The platform allows users to view, add, edit, and delete jobs, while interacting with a mock server using JSON Server for full CRUD (Create, Read, Update, Delete) functionality. The design is enhanced using Tailwind CSS.
+## Overview
+
+This project is a comprehensive Vue.js application designed as part of the "Vue.js Crash Course 2024" offered by Traversy Media. It aims to provide developers with a hands-on experience in building user interfaces and single-page applications (SPAs) using Vue.js, a progressive JavaScript framework.
 
 ## Features
 
-- **Job Listings:** Display a list of jobs from a JSON file or a mock API.
-- **Add Jobs:** Allows users to add new jobs via a form.
-- **Edit Jobs:** Facilitates editing job details.
-- **Delete Jobs:** Provides the ability to delete jobs.
-- **Navigation:** Vue Router is implemented for seamless navigation between views.
-- **Notifications:** Toast notifications to indicate successful actions (such as adding or deleting a job).
-- **Responsive Design:** Tailwind CSS is used to create a modern, responsive design.
-- **Netlify Deployment:** Configured for continuous deployment on Netlify.
+- **Component-Based Architecture**: Leverage reusable components to build complex UIs.
+- **Reactive Data Binding**: Automatically update the UI when the underlying data changes.
+- **Routing**: Implement navigation between different views using Vue Router.
+- **State Management**: Utilize Pinia for managing application state.
+- **API Integration**: Fetch and manipulate data using JSON Server for a mock backend.
+- **Styling**: Integrate Tailwind CSS for responsive and modern design.
 
-## Technologies Used
+## Prerequisites
 
-- **Vue.js 3**
-- **Vite**
-- **Tailwind CSS**
-- **JSON Server**
-- **Vue Router**
-- **Axios**
-- **PrimeIcons**
-- **Netlify**
+Before getting started, ensure you have a basic understanding of the following:
 
-## Installation
+- JavaScript Fundamentals (loops, functions, objects, etc.)
+- DOM Manipulation and Events
+- Fetch API and Basic HTTP
+- NPM (Node Package Manager)
 
-Follow the steps below to run this project locally.
+## Getting Started
 
-1. Clone this repository:
+### Installation
+
+1. Clone the repository:
+
    ```bash
-   git clone https://github.com/your-username/vuejobs.git
-   cd vuejobs
-Install the dependencies:
+   git clone https://github.com/yourusername/vue-crash-course-2024.git
+   cd vue-crash-course-2024
+   ```
 
-bash
-Copiar código
-npm install
-Start the development server:
+2. Install dependencies:
 
-bash
-Copiar código
-npm run dev
-In a separate terminal, start the JSON Server:
+   ```bash
+   npm install
+   ```
 
-bash
-Copiar código
-npm run json-server
-Open your browser at http://localhost:3000 to view the application.
+3. Run the development server:
 
-Usage
-Navigate to the homepage to view the job listings.
-Use the "Add Job" button to create a new job.
-Click "Edit" to modify an existing job.
-Delete a job using the "Delete" button.
-Deployment
-This project is set up for deployment on Netlify. Every push to the GitHub repository triggers a new automatic deployment on Netlify.
+   ```bash
+   npm run dev
+   ```
 
-Create a repository on GitHub.
-Connect your repository to Netlify.
-Configure the production branch in Netlify for continuous deployment.
-Available Scripts
-npm run dev: Starts the development server.
-npm run build: Builds the project for production in the dist folder.
-npm run preview: Previews the production build locally.
-npm run json-server: Starts the mock JSON server on port 8000.
-Contributions
-Contributions are welcome! Please follow the standard GitHub workflow to contribute:
+   The application will be available at `http://localhost:3000`.
 
-Fork the repository.
-Create a new branch (git checkout -b feature/new-feature).
-Make your changes and commit them (git commit -m 'Add new feature').
-Push your changes to your branch (git push origin feature/new-feature).
-Open a Pull Request.
+### Project Structure
+
+- **src/**: Contains the main application code.
+  - **components/**: Reusable Vue components.
+  - **views/**: Different views for routing.
+  - **router/**: Configuration for Vue Router.
+  - **assets/**: Static assets like images and styles.
+
+### Usage
+
+- Start by exploring the `src/App.vue` file to understand the main layout.
+- Navigate through different views using the navigation bar.
+- Modify components in the `src/components/` directory to see real-time updates.
+
+## Contributing
+
+Contributions are welcome! If you have suggestions for improvements or new features, please fork the repository and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Acknowledgments
+
+Special thanks to Traversy Media for providing the course material and resources used in this project. For more information, visit [Traversy Media](https://www.traversymedia.com). 
+
+---
+
+This README serves as a guide to get started with the Vue.js Crash Course 2024 project, providing a structured approach to learning and building with Vue.js.
+
+Citations:
+[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/14001646/0ded2472-b23b-4d2e-8be5-bbb226a38272/3c51e5c1-da03-4c00-ab2c-7eabed790092_Vue.js_crash_course_2024.pdf
