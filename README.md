@@ -28,8 +28,8 @@ Before getting started, ensure you have a basic understanding of the following:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/vue-crash-course-2024.git
-   cd vue-crash-course-2024
+   git clone https://github.com/josehb96/VueJobs.git
+   cd VueJobs
    ```
 
 2. Install dependencies:
