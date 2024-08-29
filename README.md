@@ -76,6 +76,3 @@ Special thanks to Traversy Media for providing the course material and resources
 ---
 
 This README serves as a guide to get started with the Vue.js Crash Course 2024 project, providing a structured approach to learning and building with Vue.js.
-
-Citations:
-[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/14001646/0ded2472-b23b-4d2e-8be5-bbb226a38272/3c51e5c1-da03-4c00-ab2c-7eabed790092_Vue.js_crash_course_2024.pdf
