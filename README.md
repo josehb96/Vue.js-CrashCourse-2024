@@ -9,7 +9,6 @@ This project is a comprehensive Vue.js application designed as part of the "Vue.
 - **Component-Based Architecture**: Leverage reusable components to build complex UIs.
 - **Reactive Data Binding**: Automatically update the UI when the underlying data changes.
 - **Routing**: Implement navigation between different views using Vue Router.
-- **State Management**: Utilize Pinia for managing application state.
 - **API Integration**: Fetch and manipulate data using JSON Server for a mock backend.
 - **Styling**: Integrate Tailwind CSS for responsive and modern design.
 
